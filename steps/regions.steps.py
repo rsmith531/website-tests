@@ -34,7 +34,6 @@ def step_impl(context, region):
 def step_impl(context):
     i = context.page.find("text-warm", context.region_index)
     routes = ""
-    # print(context.page.encode("utf-8"))
     while context.page[i] != '<':
         if context.page[i].isdigit():
             routes += context.page[i]
